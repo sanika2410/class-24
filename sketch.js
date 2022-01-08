@@ -57,12 +57,12 @@ function keyReleased(){
 }
 function keyPressed(){
   if(keyCode===DOWN_ARROW){
-    var cannonball = new CannonBall(cannon.x,cannon.y)
+    var cannonBall = new CannonBall(cannon.x,cannon.y)
     balls.push(cannonBall)
   }
 }
 
-function showcannonBalls(ball){
+function showcannonBalls(ball,i){
   if(ball){
     ball.display()
   }
